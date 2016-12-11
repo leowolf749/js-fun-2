@@ -70,6 +70,20 @@ console.log(secondLargest(array));
 
 console.log('#5. containsVowel');
 
+let word = 'dog';
+let vowel =  ['a', 'e', 'i', 'o', 'u'];
+
+function containsVowel(word) {
+    for (let i = 0; i < vowel.length; i++) {
+        if (word[i] === vowel[i]) {
+            return true;
+        }
+    }
+    return false;
+
+}
+console.log(containsVowel(word));
+
 
 
 
@@ -100,4 +114,4 @@ console.log(winner);
 //let sentence = 'how much wood would a woodchuck chuck?';
 //let words = sentence.split('.');
 
-//console.log(sentence.split(''));
+//console.log(sentence.split(''))

@@ -70,22 +70,38 @@ console.log(secondLargest(array));
 
 console.log('#5. containsVowel');
 
+// Need to figure out how to compare the letters array to the vowels array
+
 let word = 'dog';
 let vowel =  ['a', 'e', 'i', 'o', 'u'];
+let letters = word.split("");
 
 function containsVowel(word) {
+    
     for (let i = 0; i < vowel.length; i++) {
-        if (word[i] === vowel[i]) {
+        if (letters[i] === vowel[i].length) {
             return true;
+        } else {
+            return false;
         }
     }
-    return false;
-
 }
 console.log(containsVowel(word));
 
+console.log('#6. piglatin');
 
-
+let string = 'cloud'
+let cloud = string.split(''); // Makes an array containing letters from variable 'string'.
+let newstring = cloud.push([0] + 'ay'); // Pushes characters to end of original string
+                                        // Convert position of index into string.
+function piglatin(string) {
+    if (i = cloud[0]) {
+        cloud.splice([0]);
+        
+    }    
+    return newstring;
+}
+console.log(piglatin(string));
 
 
 console.log('#7. longestWord');
@@ -115,3 +131,11 @@ console.log(winner);
 //let words = sentence.split('.');
 
 //console.log(sentence.split(''))
+
+console.log('#8. divisors');
+
+
+console.log('#9. weave');
+
+function weave()  // Input: A string and a number.
+                  // Output: Every 'x'th character is replaced by 'x'.

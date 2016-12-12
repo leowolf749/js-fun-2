@@ -137,5 +137,27 @@ console.log('#8. divisors');
 
 console.log('#9. weave');
 
-function weave()  // Input: A string and a number.
-                  // Output: Every 'x'th character is replaced by 'x'.
+// Input: A string and a number.
+// Output: Every 'x'th character is replaced by 'x'.
+
+function weave() {
+
+}                   
+
+console.log('#10. bonus');
+
+// Create function called bonus that accepts a single parameter (cost of meal).
+// Calculate 20% of the original cost to figure out the tip.
+// Math.round total cost to the nearest dollar.
+
+let cost = 15.21;
+
+function bonus(cost) {
+    let tip = cost * .2;
+    let totaltip = Math.round(tip);
+    return totaltip;
+}
+console.log(bonus(cost));
+
+console.log('#11. pokemon');
+
